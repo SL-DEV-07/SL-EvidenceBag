@@ -39,7 +39,9 @@ Soon
 <b>Funciones:</b>
 
 0.0 ms
-Nombre del elemento personalizable y parámetros de almacenamiento
+
+Nombre del item personalizable y parámetros de storage
+
 Compatibilidad para ox_core, ESX, QBCore, cualquier otra cosa que ejecute ox_inventory
 
 # Instalación
