@@ -7,7 +7,7 @@
 
 # Download this script
 - Add evidence to inventory as it is in "Item in ox_inventory" below
-- Add evidence image to inventory images (found in SL-EvidenceBag/_inventory_images/evidence.png)
+- Add evidence image to inventory images (found in SL-EvidenceBag/images/evidence.png)
 - Put script in your resources directory
 - Ensure SL-EvidenceBag after ox_lib but before ox_inventory
 
