@@ -37,12 +37,9 @@ Soon
 # SL-EvidenceBag
 
 <b>Funciones:</b>
-
-0.0 ms
-
-Nombre del item personalizable y parámetros de storage
-
-Compatibilidad para ox_core, ESX, QBCore, cualquier otra cosa que ejecute ox_inventory
+- 0.0 ms
+- Nombre del item personalizable y parámetros de storage
+- Compatibilidad para ox_core, ESX, QBCore, cualquier otra cosa que ejecute ox_inventory
 
 # Instalación
 - Agregue evidencia al inventario tal como está en "Artículo en ox_inventory" a continuación
