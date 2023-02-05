@@ -2,10 +2,17 @@
 
 # SL-EvidenceBag
 
+<b>Frameworks:</b>
+- ESX
+- QBUS
+- OX
+
+
 <b>Features:</b>
 - 0.0 ms
 - Customizable item name and storage parameters
 - Compatibility for ox_core, ESX, QBCore, whatever else running ox_inventory
+
 
 # Installation
 - Add evidence to inventory as it is in "Item in ox_inventory" below
@@ -36,6 +43,12 @@ Soon
 [[ ESP ]]
 
 # SL-EvidenceBag
+
+<b>Frameworks:</b>
+- ESX
+- QBUS
+- OX
+
 
 <b>Funciones:</b>
 - 0.0 ms
