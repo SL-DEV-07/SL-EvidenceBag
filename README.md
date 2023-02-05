@@ -15,6 +15,7 @@
 
 # Dependencies
 - ox_inventory
+- ox_lib
 
 ## Item in ox_inventory
 Item to add to `ox_inventory/data/items.lua`
