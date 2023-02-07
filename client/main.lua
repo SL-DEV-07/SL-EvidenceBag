@@ -11,7 +11,7 @@ AddEventHandler('ox_inventory:updateInventory', function(changes)
     for k, v in pairs(changes) do
         if type(v) == 'table' then
             local count = ox_inventory:Search('count', Config.EvidenceBagItem)
-	        if count > 0 and then
+	        if count > 0 then
             end
         end
         if type(v) == 'boolean' then
