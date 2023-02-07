@@ -21,7 +21,7 @@ end
 RegisterServerEvent('SL-EvidenceBag:openEvidenceBag')
 AddEventHandler('SL-EvidenceBag:openEvidenceBag', function(identifier)
 	if not registeredStashes[identifier] then
-        ox_inventory:RegisterStash('evidencebag_'..identifier, 'EvidenceBag', Config.EvidenceBagItemStorage.slots, Config.EvidenceBagItemStorage.weight, false)
+        ox_inventory:RegisterStash('bagevidence_'..identifier, 'EvidenceBag', Config.EvidenceBagItemStorage.slots, Config.EvidenceBagItemStorage.weight, false)
         registeredStashes[identifier] = true
     end
 end)
@@ -29,7 +29,7 @@ end)
 lib.callback.register('SL-EvidenceBag:getNewIdentifier', function(source, slot)
 	local newId = GenerateSerial()
 	ox_inventory:SetMetadata(source, slot, {identifier = newId})
-	ox_inventory:RegisterStash('evidence_'..newId, 'EvidenceBag', Config.EvidenceBagItemStorage.slots, Config.EvidenceBagItemStorage.weight, false)
+	ox_inventory:RegisterStash('bagevidence_'..newId, 'EvidenceBag', Config.EvidenceBagItemStorage.slots, Config.EvidenceBagItemStorage.weight, false)
 	registeredStashes[newId] = true
 	return newId
 end)
