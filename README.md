@@ -33,7 +33,7 @@ Item to add to `ox_inventory/data/items.lua`
 		stack = false,
 		consume = 0,
 		client = {
-			export = 'SL-EvidenceBag.openEvidence'
+			export = 'SL-EvidenceBag.openEvidenceBag'
 		}
 	},
 ```
@@ -73,7 +73,7 @@ Item to add to `ox_inventory/data/items.lua`
 		stack = false,
 		consume = 0,
 		client = {
-			export = 'SL-EvidenceBag.openEvidence'
+			export = 'SL-EvidenceBag.openEvidenceBag'
 		}
 	},
 ```
