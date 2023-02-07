@@ -1,5 +1,3 @@
-----For support and more scripts----
-----[ https://discord.gg/j2Qhm7dzK3 ]----
 local registeredStashes = {}
 local ox_inventory = exports.ox_inventory
 
@@ -23,7 +21,7 @@ end
 RegisterServerEvent('SL-EvidenceBag:openEvidenceBag')
 AddEventHandler('SL-EvidenceBag:openEvidenceBag', function(identifier)
 	if not registeredStashes[identifier] then
-        ox_inventory:RegisterStash('bag_'..identifier, 'EvidenceBag', Config.EvidenceBagStorage.slots, Config.EvidenceBagStorage.weight, false)
+        ox_inventory:RegisterStash('evidence_'..identifier, 'EvidenceBag', Config.Storage.slots, Config.Storage.weight, false)
         registeredStashes[identifier] = true
     end
 end)
@@ -31,7 +29,7 @@ end)
 lib.callback.register('SL-EvidenceBag:getNewIdentifier', function(source, slot)
 	local newId = GenerateSerial()
 	ox_inventory:SetMetadata(source, slot, {identifier = newId})
-	ox_inventory:RegisterStash('bag_'..newId, 'EvidenceBag', Config.EvidenceBagStorage.slots, Config.EvidenceBagStorage.weight, false)
+	ox_inventory:RegisterStash('evidence_'..newId, 'EvidenceBag', Config.gStorage.slots, Config.Storage.weight, false)
 	registeredStashes[newId] = true
 	return newId
 end)
