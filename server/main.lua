@@ -29,7 +29,7 @@ end)
 lib.callback.register('SL-EvidenceBag:getNewIdentifier', function(source, slot)
 	local newId = GenerateSerial()
 	ox_inventory:SetMetadata(source, slot, {identifier = newId})
-	ox_inventory:RegisterStash('evidence_'..newId, 'EvidenceBag', Config.gStorage.slots, Config.Storage.weight, false)
+	ox_inventory:RegisterStash('evidence_'..newId, 'EvidenceBag', Config.Storage.slots, Config.Storage.weight, false)
 	registeredStashes[newId] = true
 	return newId
 end)
