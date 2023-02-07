@@ -5,4 +5,4 @@ Config.Storage = {
     weight = 13000 --Total Weight
 }
 
-Config.Item = 'evidence' Name of item
+Config.Item = 'evidence' --Name of item
