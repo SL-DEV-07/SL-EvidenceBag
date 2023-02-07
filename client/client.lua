@@ -24,10 +24,9 @@ end)
 exports('openEvidenceBag', function(data, slot)
     if not slot?.metadata?.identifier then
         local identifier = lib.callback.await('SL-EvidenceBag:getNewIdentifier', 100, data.slot)
-        ox_inventory:openInventory('stash', 'evidence_'..identifier)
+        ox_inventory:openInventory('stash', 'bagevidence_'..identifier)
     else
         TriggerServerEvent('SL-EvidenceBag:openEvidenceBag', slot.metadata.identifier)
-        ox_inventory:openInventory('stash', 'evidence_'..slot.metadata.identifier)
+        ox_inventory:openInventory('stash', 'bagevidence_'..slot.metadata.identifier)
     end
 end)
-
